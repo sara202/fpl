@@ -4,8 +4,9 @@
   "description": "Simple authentication system",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "start": "node server.js"
+},
+"main": "server.js",
   "author": "Sara Rogerson",
   "license": "ISC",
   "dependencies": {
