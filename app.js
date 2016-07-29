@@ -11,6 +11,10 @@ var LocalStrategy = require('passport-local').Strategy;
 var mongo = require('mongodb');
 var mongoose = require('mongoose');
 
+var http = require('http');
+var ip = process.env.OPENSHIFT_NODEJS_IP || '127.0.0.1',
+    port = process.env.OPENSHIFT_NODEJS_PORT || '8080';
+
 
 mongoose.connect('mongodb://testUser:test1@ds023315.mlab.com:23315/footballleaguepredictions');
 var db = mongoose.connection;
